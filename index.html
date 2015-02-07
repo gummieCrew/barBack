@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thomas Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Jquery files -->
+    <script src="lib/jquery/jquery-1.11.2.min.js"></script>
+    
+    <!-- Bootstrap 3 files-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- My files -->
+    <link href="css/login.css" rel="stylesheet">
+    
+    <!-- Thomas, eventually this will actually be called something like login.html, and the index.html file will be just a page that
+    jumps to this one right away essentially, or we just change the ROOT DEFAULT file to be hit be login.html...this can be changed in
+    the apache server.xml file that I showed you.  I think its called home_file or root_file or something...I am using mongoose right
+    now though cause its easy =P -->
+  </head>
+  <body>
+  
+    <div class="container">
+      <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="text" class="input-block-level" placeholder="Email address">
+        <input type="password" class="input-block-level" placeholder="Password">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-large btn-primary" id="login_btn" type="submit">Sign in</button>
+      </form>
+    </div>
+    
+  </body>
+</html>
